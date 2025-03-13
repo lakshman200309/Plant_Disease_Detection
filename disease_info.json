@@ -1,0 +1,102 @@
+{
+    "Healthy": {
+        "cure": "No treatment required. Maintain optimal watering and fertilization.",
+        "growth_tips": "Ensure proper sunlight and regular pruning for better growth."
+    },
+    "Powdery Mildew": {
+        "cure": "Use fungicides containing sulfur or neem oil. Remove affected leaves.",
+        "growth_tips": "Ensure proper air circulation and avoid overhead watering."
+    },
+    "Rust": {
+        "cure": "Apply copper-based fungicides. Remove infected leaves to prevent spread.",
+        "growth_tips": "Plant resistant varieties and maintain proper spacing."
+    },
+    "Leaf Spot": {
+        "cure": "Use fungicidal sprays and remove infected leaves promptly.",
+        "growth_tips": "Water plants at the base and avoid wetting the leaves."
+    },
+    "Blight": {
+        "cure": "Apply a copper fungicide and remove infected plant parts.",
+        "growth_tips": "Rotate crops and avoid planting in the same soil yearly."
+    },
+    "Bacterial Wilt": {
+        "cure": "Remove and destroy affected plants. Use resistant varieties.",
+        "growth_tips": "Ensure proper soil drainage and avoid overwatering."
+    },
+    "Early Blight": {
+        "cure": "Apply chlorothalonil or copper-based fungicides.",
+        "growth_tips": "Mulch around plants to prevent soil splash."
+    },
+    "Late Blight": {
+        "cure": "Use fungicides like Mancozeb. Destroy infected plants immediately.",
+        "growth_tips": "Avoid excessive moisture and ensure good air circulation."
+    },
+    "Downy Mildew": {
+        "cure": "Apply fungicides like metalaxyl or copper-based sprays.",
+        "growth_tips": "Ensure good air movement and reduce humidity around plants."
+    },
+    "Anthracnose": {
+        "cure": "Use a fungicide with azoxystrobin. Remove infected plant debris.",
+        "growth_tips": "Practice crop rotation and avoid overhead watering."
+    },
+    "Cercospora Leaf Spot": {
+        "cure": "Apply neem oil or copper fungicides.",
+        "growth_tips": "Improve soil drainage and reduce plant stress."
+    },
+    "Mosaic Virus": {
+        "cure": "No chemical cure. Remove and destroy infected plants.",
+        "growth_tips": "Control aphids and other pests that spread the virus."
+    },
+    "Fusarium Wilt": {
+        "cure": "Use fungicides containing thiophanate-methyl. Rotate crops.",
+        "growth_tips": "Improve soil health and avoid planting in contaminated areas."
+    },
+    "Verticillium Wilt": {
+        "cure": "No effective treatment. Remove infected plants and improve soil.",
+        "growth_tips": "Use disease-resistant varieties and improve soil aeration."
+    },
+    "Black Rot": {
+        "cure": "Apply copper fungicides and remove affected leaves.",
+        "growth_tips": "Use disease-free seeds and avoid overhead watering."
+    },
+    "Alternaria Leaf Spot": {
+        "cure": "Apply fungicides with chlorothalonil or mancozeb.",
+        "growth_tips": "Avoid prolonged leaf wetness and improve air circulation."
+    },
+    "Yellow Leaf Curl Virus": {
+        "cure": "No cure available. Remove infected plants to prevent spread.",
+        "growth_tips": "Control whiteflies as they spread the virus."
+    },
+    "Brown Spot": {
+        "cure": "Use copper-based fungicides and remove infected leaves.",
+        "growth_tips": "Ensure good drainage and avoid overhead irrigation."
+    },
+    "Scab": {
+        "cure": "Apply fungicides containing sulfur or captan.",
+        "growth_tips": "Use resistant plant varieties and prune regularly."
+    },
+    "Septoria Leaf Spot": {
+        "cure": "Use fungicides with chlorothalonil or copper compounds.",
+        "growth_tips": "Avoid excessive nitrogen fertilization and water at the base."
+    },
+    "Bacterial Leaf Blight": {
+        "cure": "Apply copper-based sprays and remove infected plants.",
+        "growth_tips": "Ensure proper plant spacing and avoid high humidity."
+    },
+    "Sooty Mold": {
+        "cure": "Control the insects that cause mold buildup (e.g., aphids, whiteflies).",
+        "growth_tips": "Use insecticidal soap and keep plants clean from honeydew."
+    },
+    "Leaf Curl": {
+        "cure": "Apply fungicides before bud break, such as Bordeaux mixture.",
+        "growth_tips": "Use disease-resistant varieties and prune infected areas."
+    },
+    "White Mold": {
+        "cure": "Apply fungicides like thiophanate-methyl and remove affected plants.",
+        "growth_tips": "Improve soil drainage and avoid excessive moisture."
+    },
+    "Gray Mold": {
+        "cure": "Use fungicides like iprodione or thiophanate-methyl.",
+        "growth_tips": "Increase airflow and remove dead plant material."
+    }
+}

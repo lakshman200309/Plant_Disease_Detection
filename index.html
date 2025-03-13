@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .nav-item {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-item:hover {
+            background-color: #34D399; /* Tailwind green-400 */
+            color: #1F2937; /* Tailwind gray-800 */
+            border-radius: 0.375rem; /* Tailwind rounded-md */
+            padding: 0.5rem 1rem; /* Tailwind px-4 py-2 */
+        }
+        .gallery-item {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        }
+        .blink-text {
+            animation: blink-animation 1.5s steps(1, start) infinite;
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        @keyframes blink-animation {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-roboto flex flex-col min-h-screen">
+    <header class="bg-green-700 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Plant Disease Detection</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="/" class="nav-item">Home</a></li>
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="/upload" class="nav-item">Upload Image</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-10 p-4 flex-grow">
+        <section class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:bg-gray-700">
+            <h2 class="text-2xl font-bold mb-4">Welcome to Plant Disease Detection</h2>
+            <p class="text-gray-300">This application helps you detect plant diseases by uploading an image of the plant. Navigate to the Upload Image section to upload an image and get a prediction.</p>
+        </section>
+    </main>
+
+    <div id="about" class="hidden">
+        <main class="container mx-auto mt-10 p-4">
+            <section class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition-colors duration-300">
+                <h2 class="text-2xl font-bold mb-4">About This Project</h2>
+                <p class="text-gray-300">Our Plant Disease Detection System is an AI-powered web application designed to help farmers, gardeners, and researchers identify plant diseases quickly and accurately. By simply uploading an image of a plant leaf, users can receive instant disease predictions, enabling them to take preventive or corrective measures promptly.</p>
+            </section>
+    
+            <!-- Key Features Section -->
+            <section class="bg-gray-800 p-6 rounded-lg shadow-lg mt-6 hover:bg-gray-700 transition-colors duration-300">
+                <h3 class="text-lg font-semibold text-gray-300 mb-4">Key Features</h3>
+                <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+                    <li class="hover:text-green-400 hover:underline"><i class="fas fa-brain mr-2"></i>AI-Powered Disease Detection – Uses deep learning models to analyze plant leaf images and detect diseases.</li>
+                    <li class="hover:text-green-400 hover:underline"><i class="fas fa-user-friends mr-2"></i>User-Friendly Interface – A simple and intuitive web application built using HTML, CSS, and Flask.</li>
+                    <li class="hover:text-green-400 hover:underline"><i class="fas fa-tachometer-alt mr-2"></i>Fast and Accurate Results – Provides quick analysis to assist in decision-making.</li>
+                    <li class="hover:text-green-400 hover:underline"><i class="fas fa-cogs mr-2"></i>Scalable and Expandable – Designed for further enhancements, such as treatment suggestions and growth tips.</li>
+                </ul>
+            </section>
+    
+            <!-- Technologies Used Section -->
+            <section class="bg-gray-800 p-6 rounded-lg shadow-lg mt-6 hover:bg-gray-700 transition-colors duration-300">
+                <h3 class="text-lg font-semibold text-gray-300 mb-4">Technologies Used</h3>
+                <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+                    <li class="hover:text-green-400 hover:underline"><i class="fab fa-python mr-2"></i>Python & Flask – Backend development and API handling.</li>
+                    <li class="hover:text-green-400 hover:underline"><i class="fab fa-html5 mr-2"></i>HTML, CSS – Frontend for user-friendly interaction.</li>
+                    <li class="hover:text-green-400 hover:underline"><i class="fas fa-network-wired mr-2"></i>Machine Learning – Deep learning models for image classification.</li>
+                    <li class="hover:text-green-400 hover:underline"><i class="fas fa-camera-retro mr-2"></i>OpenCV & TensorFlow/Keras – Image preprocessing and model inference.</li>
+                </ul>
+            </section>
+    
+            <!-- Upcoming Features Section -->
+            <section class="bg-gray-800 p-6 rounded-lg shadow-lg mt-6 hover:bg-gray-700 transition-colors duration-300">
+                <h3 class="text-lg font-semibold text-gray-300 mb-4">Upcoming Features</h3>
+                <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+                    <li class="hover:text-green-400 hover:underline"><i class="fas fa-medkit mr-2"></i>Disease Treatment & Cure Suggestions – Provide users with recommended treatments for detected diseases.</li>
+                    <li class="hover:text-green-400 hover:underline"><i class="fas fa-seedling mr-2"></i>Plant Growth Tips – Offer personalized growth and care instructions based on plant type and condition.</li>
+                    <li class="hover:text-green-400 hover:underline"><i class="fas fa-mobile-alt mr-2"></i>Mobile-Friendly Design – Optimize UI for seamless mobile experience.</li>
+                    <li class="hover:text-green-400 hover:underline"><i class="fas fa-language mr-2"></i>Multi-Language Support – Expand usability for non-English-speaking users.</li>
+                </ul>
+            </section>
+
+            <!-- About the Author Section -->
+            <section class="bg-gray-800 p-6 rounded-lg shadow-lg mt-6 hover:bg-gray-700 transition-colors duration-300">
+                <h2 class="text-2xl font-bold mb-4">About the Author</h2>
+                <p class="text-gray-300">
+                    <strong>Tumu Lakshman Prasanna Kumar</strong> is a passionate Computer Science student specializing in Artificial Intelligence. With a strong foundation in Python, Java, SQL, and AI/ML, he is dedicated to solving real-world challenges through technology. He has worked on various projects, including this Plant Disease Detection system, leveraging Flask and deep learning techniques. Lakshman is an enthusiastic problem-solver with experience in software development and customer service, making him adaptable in both technical and client-facing roles. <br><br>
+                    Explore more about his work: <a href="https://lakshman200309.github.io/Personal_Portfolio/" target="_blank" class="text-green-400 hover:underline">Personal Portfolio</a>
+                </p>
+            </section>
+    
+            <!-- Blinking Text Section -->
+            <section class="bg-gray-800 p-6 rounded-lg shadow-lg mt-6 hover:bg-gray-700 transition-colors duration-300">
+                <p class="blink-text">Stay tuned for future updates! Contact Admin immediately in case of errors and doubts...</p>
+            </section>
+        </main>
+    </div>
+
+    <div id="upload" class="hidden">
+        <main class="container mx-auto mt-10 p-4">
+            <section class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition-colors duration-300">
+                <h2 class="text-2xl font-bold mb-4">Upload Plant Image</h2>
+                <form action="/predict" method="POST" enctype="multipart/form-data" class="space-y-4">
+                    <div>
+                        <label for="file" class="block text-sm font-medium text-gray-300">Choose an image</label>
+                        <input type="file" name="file" id="file" class="mt-1 block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                    </div>
+                    <button type="submit" class="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">Predict</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <div id="contact" class="hidden">
+        <main class="container mx-auto mt-10 p-4">
+            <section class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition-colors duration-300">
+                <h2 class="text-2xl font-bold mb-4">Contact</h2>
+                <p class="text-gray-300">Feel free to reach out to me through the following channels:</p>
+                <ul class="mt-4 space-y-2">
+                    <li>
+                        <a href="https://www.linkedin.com/in/tumu-lakshman-prasanna-kumar-a37561270" class="text-blue-400 hover:underline" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:lpkumartumu@gmail.com" class="text-blue-400 hover:underline">
+                            <i class="fas fa-envelope"></i> lpkumartumu@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/+919490200309" class="text-blue-400 hover:underline" target="_blank">
+                            <i class="fab fa-telegram"></i> Telegram
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <div id="gallery" class="container mx-auto mt-10 p-4">
+        <h2 class="text-2xl font-bold mb-4">Gallery</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <img src="https://storage.googleapis.com/a1aa/image/f21_Rueqsw1fiELUBB0amI7fME-6M9ZiAstTzuHV0AE.jpg" alt="A close-up image of a plant leaf with visible disease spots" class="gallery-item rounded-lg shadow-lg" width="300" height="200">
+            <img src="https://storage.googleapis.com/a1aa/image/XGVyoFZsWWf2K32Sv2BfLQAkQqmIV-pCYmA8W8_4cFA.jpg" alt="A wide shot of a field with several plants showing signs of disease" class="gallery-item rounded-lg shadow-lg" width="300" height="200">
+            <img src="https://storage.googleapis.com/a1aa/image/jVWvcFP6RI1ie6Qs_v94Eqr0FayM4ZKKoeiTZYi6by0.jpg" alt="A detailed image of a plant stem with fungal infection" class="gallery-item rounded-lg shadow-lg" width="300" height="200">
+            <img src="https://storage.googleapis.com/a1aa/image/fs6nEfKw9_TLRsfZOx1Ddl0GCQhLIMcpMk6oM_Kaq_s.jpg" alt="A macro shot of a plant leaf with bacterial infection" class="gallery-item rounded-lg shadow-lg" width="300" height="200">
+            <img src="https://storage.googleapis.com/a1aa/image/zK6EX4ag_1TxIMT07uz1bSGhWT0zDHVxzWo0zDrCS5o.jpg" alt="A plant with yellowing leaves indicating a possible disease" class="gallery-item rounded-lg shadow-lg" width="300" height="200">
+            <img src="https://storage.googleapis.com/a1aa/image/dCvq2P1o7fssGjU1DJiLslqbJYgHtwUY4f1hZFh0hnM.jpg" alt="A close-up of a plant leaf with insect damage" class="gallery-item rounded-lg shadow-lg" width="300" height="200">
+            <img src="https://storage.googleapis.com/a1aa/image/BBxcjAiQaU3SB6wdWiQSOlGAiO97TCCLfijOlwTdLyo.jpg" alt="A plant with wilted leaves due to disease" class="gallery-item rounded-lg shadow-lg" width="300" height="200">
+            <img src="https://storage.googleapis.com/a1aa/image/YP1uQgOmUKOeGP41GK3XJdrwk2e_fkK51Ohx7Tryfa4.jpg" alt="A plant showing signs of nutrient deficiency" class="gallery-item rounded-lg shadow-lg" width="300" height="200">
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white p-4 mt-10">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Plant Disease Detection. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('a[href="/upload"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('main').classList.add('hidden');
+            document.getElementById('upload').classList.remove('hidden');
+            document.getElementById('about').classList.add('hidden');
+            document.getElementById('contact').classList.add('hidden');
+            document.getElementById('gallery').classList.add('hidden');
+        });
+
+        document.querySelector('a[href="/"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('main').classList.remove('hidden');
+            document.getElementById('upload').classList.add('hidden');
+            document.getElementById('about').classList.add('hidden');
+            document.getElementById('contact').classList.add('hidden');
+            document.getElementById('gallery').classList.remove('hidden');
+        });
+
+        document.querySelector('a[href="#about"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('main').classList.add('hidden');
+            document.getElementById('upload').classList.add('hidden');
+            document.getElementById('about').classList.remove('hidden');
+            document.getElementById('contact').classList.add('hidden');
+            document.getElementById('gallery').classList.add('hidden');
+        });
+
+        document.querySelector('a[href="#contact"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('main').classList.add('hidden');
+            document.getElementById('upload').classList.add('hidden');
+            document.getElementById('about').classList.add('hidden');
+            document.getElementById('contact').classList.remove('hidden');
+            document.getElementById('gallery').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
