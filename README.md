@@ -122,13 +122,12 @@ Tumu Lakshman Prasanna Kumar
 
 ## 👤 Connect with Me
 
-You can reach out to me via the following platforms:
-
-- 🌐 **Portfolio:** [lakshman200309.github.io/Personal_Portfolio](https://lakshman200309.github.io/Personal_Portfolio)
-- 💼 **LinkedIn:** [Tumu Lakshman Prasanna Kumar](https://www.linkedin.com/in/tumu-lakshman-prasanna-kumar-a37561270)
-- ✉️ **Email:** [lpkumartumu@gmail.com](mailto:lpkumartumu@gmail.com)
-- 💬 **Telegram:** [@lakshman200309](https://t.me/+919490200309)
-
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green?style=for-the-badge&logo=google-chrome)](https://lakshman200309.github.io/Personal_Portfolio/)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tumu-lakshman-prasanna-kumar-a37561270)  
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/lakshman200309)  
+[![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram)](https://www.instagram.com/i_m_the_hotstar)  
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:lpkumartumu@gmail.com)  
+[![Telegram](https://img.shields.io/badge/Telegram-Chat-2CA5E0?style=for-the-badge&logo=telegram)](https://t.me/+919490200309)
 
 📌 GitHub Repository
 🔗 https://github.com/lakshman200309/Plant_Disease_Detection
